@@ -5,9 +5,8 @@ dist-ssr/
 
 # Vercel local links & env files
 .vercel/
-.env
-.env.local
-.env.*.local
+.vercel
+.env*
 
 # Logs & OS files
 npm-debug.log*

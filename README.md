@@ -1,96 +1,76 @@
-# 🚀 Dharmendra Kumar - Software Engineer & AI Developer Portfolio
+# Dharmendra Kumar — Portfolio (`dharmendra.cv`)
 
-An interactive, responsive portfolio website built with **React**, **Vite**, **Tailwind CSS**, and **Lucide Icons**, crafted specifically according to Dharmendra Kumar's resume.
+Production developer portfolio built with **React 18**, **Vite 6**, **Tailwind CSS 3**, and **Lucide Icons**, configured for **Vercel** deployment and custom domain **`https://dharmendra.cv`**.
 
----
-
-## 🌟 Highlights & Features
-
-- **Personalized Header & Interactive Typing Hero**: Features dynamic rotating roles (*Software Engineering Aspirant*, *AI & Computer Vision Enthusiast*, *Hackathon Winner*, *Cybersecurity & Full-Stack Developer*), live terminal simulation, quick stats, and direct CTA buttons.
-- **Hackathon Victory & Achievements**: Dedicated spotlight for **1st Place Winner – Uttarakhand SportsTech Hackathon 2025** and **Global Rank #818 (Top 6.3%) in HackerRank Orchestrate** with celebration confetti.
-- **Interactive Projects Showcase**:
-  - **AI Form Coach** (MediaPipe Pose, Real-time exercise form analysis & repetition counting)
-  - **PDFly Pro** (Client-side privacy-first PDF management platform)
-  - **Secure Steganography Communication System** (AES Encryption & covert image steganography)
-  - **Phish Guard AI** (Machine learning threat detection for malicious URLs)
-  - Interactive project detail modal with architecture highlights, tech tags, and GitHub buttons.
-- **Skills Matrix**: Organized into *Programming Languages*, *AI & Computer Vision*, *Web & Backend*, *Cybersecurity*, *Tools & Workflows*, and *Core CS* with animated proficiency bars and category filters.
-- **Academic Timeline**: Clean, modern timeline of B.Tech CSE at JB Institute of Technology (2024–2028) and schooling.
-- **Certifications**: Verified IIT Kanpur Python for Data Science and National IP Awareness credentials.
-- **Direct Contact & Resume Download**:
-  - One-click copy for email (`dharmendrakumar481212@gmail.com`) and phone (`+91-9045141614`).
-  - Interactive contact form with mailto integration.
-  - Direct "Download Resume" buttons linked to `Dharmendra_Kumar_Resume.pdf`.
+Live Production Preview: [dharmendra-cv.vercel.app](https://dharmendra-cv.vercel.app)
 
 ---
 
-## 🛠️ Tech Stack
+## Key Features
 
-- **Framework**: [React 18](https://react.dev/) + [Vite](https://vitejs.dev/)
-- **Styling**: [Tailwind CSS 3](https://tailwindcss.com/)
-- **Icons**: [Lucide React](https://lucide.dev/) + Custom SVG brand icons
-- **Effects**: [Canvas Confetti](https://www.npmjs.com/package/canvas-confetti)
-- **Deployment Ready**: Generates static bundle in `dist/` ready for Vercel, Netlify, or GitHub Pages.
+- **Hero & Proof Showcase**: Custom teal/abyssal UI featuring direct tech stack pills, verified metrics (`14+` GitHub repositories, `1st` Hackathon Win, `#818` Global AI Rank), and instant navigation to projects and contact.
+- **Interactive Resume Modal (`ResumeModal.jsx`)**: In-browser PDF preview of `Dharmendra_Kumar_Resume.pdf`, 6-second ATS highlights, target engineering roles, and one-click PDF download.
+- **Featured Engineering Projects (`Projects.jsx` & `ProjectModal.jsx`)**: Filterable case-study breakdown cards with verified live Vercel demos and exact GitHub repository links for:
+  - **AI Form Coach** (`Sports-Hackathon`) — 60 FPS client-side MediaPipe Pose analyzer ($0 server GPU cost, 1st Place Winner)
+  - **PropFlow** (`PropFlow`) — Real-time property operations SaaS with React 18, Socket.IO, Express & MongoDB Atlas
+  - **Nova AI** (`Nova-AI`) — Multi-LLM autonomous agent with RAG vector search, MCP tools & Voice/Vision AI
+  - **PhishGuard AI** (`phishguard-ai`) — Hybrid Random Forest + TF-IDF phishing detector trained on 700k+ threat samples
+  - **Bharat Teerth** (`Bharat-Teerth`) — 3-tier heritage & pilgrimage portal with Leaflet OpenStreetMap and 23 Indian languages
+  - **PDFly Pro** (`PDFly-Pro`) — Node.js/Express PDF & Tesseract OCR document processing suite
+- **Verified Certifications (`CredentialsSection.jsx`)**: Lightbox certificate viewer with official downloads (IIT Roorkee TIDES, AlgoUniversity Gen-AI Camp, ECSoC 2026, NIPAM Govt. of India, E&ICT Academy IIT Kanpur).
+- **Dual-Track Hiring & Contact Flow (`WhatIBuild.jsx` & `Contact.jsx`)**: Client sprint deliverables alongside a recruiter fast-track, interactive `Client / Project` vs. `Company / Job` form mode, WhatsApp instant send, and email/phone clipboard copy.
 
 ---
 
-## 💻 Quick Start
+## Tech Stack
 
-### 1. Install Dependencies
+- **Frontend**: React 18, Vite 6, Tailwind CSS 3, Lucide React, Canvas Confetti
+- **Fonts**: Plus Jakarta Sans, Inter, Caveat, JetBrains Mono
+- **Deployment**: Vercel (`vercel.json` SPA rewrites, security headers & cache control, SEO meta, `robots.txt`, `sitemap.xml`)
+
+---
+
+## Local Development
+
 ```bash
 npm install
+npm run dev      # http://localhost:3000
+npm run build    # outputs production bundle to dist/
 ```
-
-### 2. Run Development Server
-```bash
-npm run dev
-```
-The site runs locally at [http://localhost:3000](http://localhost:3000).
-
-### 3. Build for Production
-```bash
-npm run build
-```
-Production-ready static files will be generated in `dist/`.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
-```
+```text
 Portfolio/
 ├── public/
-│   └── Dharmendra_Kumar_Resume.pdf  # Downloadable PDF resume
+│   ├── certificates/              # Verified certificate images & PDFs
+│   ├── images/dharmendra_cutout.png
+│   ├── Dharmendra_Kumar_Resume.pdf
+│   ├── og-preview.jpg             # 1200x630 social preview card
+│   ├── robots.txt
+│   └── sitemap.xml
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.jsx               # Navigation bar & resume download CTA
-│   │   ├── Hero.jsx                 # Dynamic typewriter intro & terminal card
-│   │   ├── About.jsx                # Summary, engineering pillars & hobbies
-│   │   ├── Skills.jsx               # Filterable skill matrix & progress bars
-│   │   ├── Projects.jsx             # Featured project cards
-│   │   ├── ProjectModal.jsx         # Detailed project architecture modal
-│   │   ├── Achievements.jsx         # Hackathons, HackerRank rank & certifications
-│   │   ├── Education.jsx            # Academic timeline
-│   │   ├── Contact.jsx              # Contact form & one-click copy buttons
-│   │   ├── Footer.jsx               # Social links & back-to-top button
-│   │   └── Icons.jsx                # SVG icons for GitHub & LinkedIn
-│   ├── data/
-│   │   └── portfolioData.js         # Single source of truth for all resume data
-│   ├── App.jsx                      # App root
-│   ├── index.css                    # Tailwind imports & glow utilities
-│   └── main.jsx                     # Vite React entry point
-├── index.html                       # HTML shell with Google Fonts & metadata
-├── tailwind.config.js               # Theme configuration
-├── vite.config.js                   # Vite configuration (port 3000)
-└── package.json                     # Dependencies & scripts
+│   │   ├── Navbar.jsx
+│   │   ├── BentoHero.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   ├── ProjectModal.jsx
+│   │   ├── CredentialsSection.jsx
+│   │   ├── WhatIBuild.jsx
+│   │   ├── Contact.jsx
+│   │   ├── ResumeModal.jsx
+│   │   ├── Footer.jsx
+│   │   └── Icons.jsx
+│   ├── data/portfolioData.js
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── vercel.json
+├── tailwind.config.js
+└── vite.config.js
 ```
-
----
-
-## ✏️ Updating Your Details
-
-All resume information (bio, skills, projects, links, contact details) is centralized in:
-[`src/data/portfolioData.js`](src/data/portfolioData.js)
-
-Whenever you build a new project or achieve a new milestone, simply edit that file and the portfolio will automatically update!
-
