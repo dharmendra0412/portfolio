@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #040e16;
+    color-scheme: dark;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  body {
+    background-color: #040e16;
+    color: #e6f2f0;
+    max-width: 100%;
+    overflow-x: clip;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #040e16;
+}
+::-webkit-scrollbar-thumb {
+  background: #12363b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #26eac1;
+}
+
+/* Portrait bottom + lower-sleeve seamless melt mask */
+.portrait-melt-mask {
+  -webkit-mask-image:
+    linear-gradient(to bottom, #000000 72%, rgba(0, 0, 0, 0.85) 84%, transparent 97%),
+    radial-gradient(ellipse 88% 92% at 50% 36%, #000000 68%, rgba(0, 0, 0, 0.55) 84%, transparent 99%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to bottom, #000000 72%, rgba(0, 0, 0, 0.85) 84%, transparent 97%),
+    radial-gradient(ellipse 88% 92% at 50% 36%, #000000 68%, rgba(0, 0, 0, 0.55) 84%, transparent 99%);
+  mask-composite: intersect;
+}
+
+/* Dotted Ambient Texture */
+.bg-corner-dots {
+  background-image: radial-gradient(rgba(61, 239, 199, 0.22) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+/* Consistent Teal-Glass Surface for Sections */
+.teal-card {
+  background: rgba(7, 21, 26, 0.68);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(52, 232, 190, 0.14);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.teal-card:hover {
+  border-color: rgba(61, 239, 199, 0.35);
+  box-shadow: 0 20px 42px -15px rgba(0, 32, 34, 0.75);
+  transform: translateY(-2px);
+}
