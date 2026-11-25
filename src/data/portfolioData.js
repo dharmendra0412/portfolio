@@ -11,7 +11,7 @@ export const personalInfo = {
   resumeUrl: "/Dharmendra_Kumar_Resume.pdf",
   rolesTargeted: [
     "SWE Intern / Junior Developer",
-    "Full-Stack Engineer (React / Node / Python)",
+    "Full-Stack Engineer (React / Next.js / Python)",
     "AI & Computer Vision Engineer"
   ],
   socials: {
@@ -19,12 +19,12 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/dharmendra-kumar-b3a8223b1",
   },
   proofMetrics: [
-    { value: "14+", label: "GitHub Repositories", sub: "3 Live Web Apps on Vercel" },
+    { value: "6+", label: "Live Deployed Apps", sub: "Running in Production on Vercel" },
     { value: "1st Place", label: "SportsTech Hackathon '25", sub: "IIT Roorkee TIDES & Fit India" },
     { value: "#818", label: "Global Rank / 12,885", sub: "Top 6.3% • 48 Countries (AI Agent)" },
-    { value: "< 4 hrs", label: "Direct Response SLA", sub: "100% GitHub IP Ownership" }
+    { value: "< 4 hrs", label: "Direct Response SLA", sub: "100% Ownership & Fast Delivery" }
   ],
-  bio: `I am a Computer Science & Engineering undergraduate at JB Institute of Technology (2024–2028) who builds production-grade full-stack applications, autonomous RAG/LLM agent platforms, and 60 FPS browser-native computer vision systems. I won 1st Place at the Uttarakhand SportsTech Hackathon 2025 (IIT Roorkee TIDES) and placed 818th among 12,885 developers globally across 48 countries in HackerRank Orchestrate May 2026.`
+  bio: `I am a Computer Science & Engineering undergraduate at JB Institute of Technology (2024–2028) who builds production-grade full-stack applications, interactive 3D WebGL/WebSocket systems, and 60 FPS browser-native computer vision tools. I won 1st Place at the Uttarakhand SportsTech Hackathon 2025 (IIT Roorkee TIDES) and placed 818th among 12,885 developers globally across 48 countries in HackerRank Orchestrate May 2026.`
 };
 
 // Engagement process shown to prospective clients & teams
@@ -39,13 +39,13 @@ export const engagementWorkflow = [
     step: "02",
     title: "Rapid Build & Live Staging",
     duration: "Days 2–10",
-    detail: "Clean commits pushed daily with live Vercel/API staging links so you test real progress early."
+    detail: "Iterative builds pushed with live Vercel preview links so you test real progress early."
   },
   {
     step: "03",
     title: "Launch & 100% IP Handover",
     duration: "Delivery",
-    detail: "Documented GitHub repository, environment setup guide, and post-launch bug-fix support."
+    detail: "Production deployment on your domain, environment setup guide, and post-launch support."
   }
 ];
 
@@ -53,45 +53,45 @@ export const engagementWorkflow = [
 export const servicesOffered = [
   {
     id: "web-apps",
-    title: "Full-Stack SaaS & Web Platforms",
-    subtitle: "React, Node.js/Express, FastAPI, WebSockets & Cloud DBs",
+    title: "Full-Stack SaaS & Commercial Web Platforms",
+    subtitle: "React, Next.js, Node.js/Express, FastAPI, WebSockets & Cloud DBs",
     timeline: "1–3 Weeks",
-    idealFor: "SaaS & Portals",
-    description: "I build fast, responsive React 18 applications backed by REST APIs, real-time Socket.IO events, JWT authentication, and MySQL or MongoDB Atlas persistence.",
+    idealFor: "SaaS & Commercial Clients",
+    description: "I build fast, responsive React 18 & Next.js web applications backed by REST APIs, real-time Socket.IO / WebSockets, JWT authentication, and MySQL or MongoDB Atlas persistence.",
     whatYouGet: [
-      "Responsive React + Tailwind UI (mobile, tablet, desktop)",
+      "Responsive React / Next.js + Tailwind UI (mobile, tablet, desktop)",
       "Role-based JWT authentication, databases & REST/WebSocket APIs",
-      "Deployed live on Vercel / Render with clean modular source code"
+      "Deployed live on Vercel with your custom domain & SSL configured"
     ],
-    tech: ["React 18", "Node.js / FastAPI", "MongoDB / MySQL", "Socket.IO"],
+    tech: ["React / Next.js", "Node.js / FastAPI", "MongoDB / MySQL", "WebSockets"],
     icon: "Layout"
   },
   {
     id: "computer-vision",
     title: "Browser-Native Computer Vision & AI",
-    subtitle: "Real-time pose tracking & AI workflows at $0 GPU server cost",
+    subtitle: "Real-time pose tracking & ML pipelines at $0 GPU server cost",
     timeline: "1–2 Weeks",
     idealFor: "Fitness, Sports & AI Apps",
-    description: "From 60 FPS MediaPipe Pose skeletal tracking running inside the browser to RAG vector search and LLM agent automation, I engineer AI features that are practical and cost-efficient.",
+    description: "From 60 FPS MediaPipe Pose skeletal tracking running inside the browser to ML threat classification and interactive AI workflows, I engineer AI features that are practical and cost-efficient.",
     whatYouGet: [
       "33-point MediaPipe Pose landmark & biomechanical angle detection",
-      "RAG document QA & multi-provider LLM tool routing",
+      "Scikit-Learn / NLP threat scoring & custom AI integrations",
       "Zero cloud GPU compute overhead for client-side inference"
     ],
-    tech: ["MediaPipe Pose", "Python", "RAG / LLMs", "OpenCV"],
+    tech: ["MediaPipe Pose", "Python", "Scikit-Learn", "OpenCV"],
     icon: "BrainCircuit"
   },
   {
     id: "backend-apis",
     title: "High-Speed Python & Node Backends",
-    subtitle: "Production APIs, ML inference endpoints & document processing",
+    subtitle: "Production APIs, ML inference endpoints & real-time telemetry",
     timeline: "5–10 Days",
     idealFor: "Web & Mobile Backends",
     description: "Need reliable backend endpoints cleanly documented with Swagger, strict schema validation, secure auth, or ML model serving? I ship battle-tested services ready for cloud scaling.",
     whatYouGet: [
       "FastAPI or Express REST APIs with structured validation",
-      "Scikit-Learn / NLP inference endpoints & OCR file pipelines",
-      "Database schema design, indexing & deployment config"
+      "Real-time WebSocket state synchronization & collision logic",
+      "Database schema design, indexing & cloud deployment"
     ],
     tech: ["FastAPI", "Python", "Express", "MySQL"],
     icon: "Server"
@@ -106,9 +106,9 @@ export const servicesOffered = [
     whatYouGet: [
       "Lean technical architecture focused on your core user loop",
       "Interactive live preview URLs from week one",
-      "Full GitHub repo ownership & setup documentation"
+      "Full handover & production deployment documentation"
     ],
-    tech: ["Full Stack", "React", "FastAPI / Node", "Vercel"],
+    tech: ["Full Stack", "Next.js / React", "FastAPI / Node", "Vercel"],
     icon: "Rocket"
   }
 ];
@@ -120,12 +120,12 @@ export const skillsData = {
       icon: "Globe",
       description: "Frontend interfaces, WebSockets & API microservices",
       skills: [
-        { name: "React 18 & Vite", tag: "Frontend" },
+        { name: "React 18 & Next.js", tag: "Frontend" },
         { name: "Tailwind CSS", tag: "Design System" },
         { name: "Node.js & Express", tag: "Backend" },
         { name: "FastAPI", tag: "Python API" },
-        { name: "Socket.IO", tag: "Real-Time" },
-        { name: "HTML5 & CSS3", tag: "Responsive UI" },
+        { name: "Socket.IO & WebSockets", tag: "Real-Time" },
+        { name: "Three.js / WebGL", tag: "3D UI" },
       ]
     },
     {
@@ -134,10 +134,10 @@ export const skillsData = {
       description: "Real-time vision, RAG pipelines & ML classification",
       skills: [
         { name: "MediaPipe Pose", tag: "60 FPS Tracking" },
-        { name: "RAG & Multi-LLM Agents", tag: "MCP / Tool Calling" },
         { name: "Scikit-Learn", tag: "Random Forest / TF-IDF" },
+        { name: "RAG & LLM Workflows", tag: "AI Agents" },
         { name: "NumPy & Pandas", tag: "Data Pipelines" },
-        { name: "Voice AI (STT / TTS)", tag: "Multimodal" },
+        { name: "Voice Cues & Telemetry", tag: "Real-Time Feedback" },
       ]
     },
     {
@@ -153,15 +153,15 @@ export const skillsData = {
       ]
     },
     {
-      name: "Databases & Document Systems",
+      name: "Databases & Cloud Deployment",
       icon: "Terminal",
-      description: "Persistence, OCR & workflow tooling",
+      description: "Persistence, geospatial UI & live deployments",
       skills: [
         { name: "MongoDB Atlas", tag: "Mongoose ODM" },
         { name: "MySQL", tag: "Relational DB" },
-        { name: "Tesseract OCR & PDF-Lib", tag: "Docs Toolkit" },
+        { name: "Leaflet Maps", tag: "Geospatial" },
         { name: "Git & GitHub", tag: "Version Control" },
-        { name: "Vercel & Render", tag: "Cloud Deploy" },
+        { name: "Vercel & Render", tag: "Production Hosting" },
       ]
     },
     {
@@ -170,8 +170,8 @@ export const skillsData = {
       description: "Access control, cryptography & threat detection",
       skills: [
         { name: "JWT & Bcrypt", tag: "Role-Based Auth" },
-        { name: "AES-256 Encryption", tag: "Confidentiality" },
         { name: "Phishing URL Detection", tag: "ML Threat Intel" },
+        { name: "AES-256 Encryption", tag: "Confidentiality" },
         { name: "Image Steganography", tag: "LSB Embedding" },
       ]
     },
@@ -189,7 +189,7 @@ export const skillsData = {
   ]
 };
 
-// Verified projects backed directly by live Vercel apps & GitHub repos
+// All featured projects backed directly by verified public HTTP 200 live deployments
 export const projectsData = [
   {
     id: "ai-form-coach",
@@ -197,8 +197,8 @@ export const projectsData = [
     subtitle: "60 FPS Real-Time Exercise Form Analyzer (MediaPipe Pose)",
     badge: "1st Place Winner",
     impactStat: "60 FPS · $0 Cloud GPU Cost",
-    category: "Vision & Security",
-    filterGroup: "Vision & Security",
+    category: "AI & Vision",
+    filterGroup: "AI & Vision",
     clientProblem: "Fitness and sports platforms struggle to offer automated coaching because streaming user webcam video to cloud GPU servers introduces high latency, server costs, and privacy concerns.",
     clientSolution: "Engineered a client-side MediaPipe Pose pipeline tracking 33 body landmarks at 60 FPS directly in the browser, computing joint angles for squats, push-ups, and pull-ups with zero server GPU billing.",
     techStack: ["MediaPipe Pose", "JavaScript", "HTML5", "CSS3", "Vercel"],
@@ -209,7 +209,6 @@ export const projectsData = [
       "Delivers instant coaching cues and automatic repetition counting with live stats.",
       "Won 1st Place (Sports Domain) at the Uttarakhand SportsTech Hackathon 2025."
     ],
-    github: "https://github.com/dharmendra0412/Sports-Hackathon",
     liveUrl: "https://sports-hackathon-six.vercel.app",
     certificateImage: "/certificates/uttarakhand-sportstech-2025.jpg",
     features: [
@@ -235,9 +234,8 @@ export const projectsData = [
       "Interval collision engine enforces 0 double-bookings across amenities and operating hours.",
       "Socket.IO powers live two-way maintenance ticket chat and Pending → In Progress → Completed workflows.",
       "Role-based JWT & bcrypt authentication separates Tenant vs. Manager access.",
-      "Persisted on MongoDB Atlas with Mongoose and deployed live on Vercel & Render."
+      "Persisted on MongoDB Atlas with Mongoose and deployed live on Vercel."
     ],
-    github: "https://github.com/dharmendra0412/PropFlow",
     liveUrl: "https://prop-flow-pi.vercel.app",
     features: [
       "Zero-Conflict Booking Algorithm",
@@ -247,55 +245,55 @@ export const projectsData = [
     ]
   },
   {
-    id: "nova-ai",
-    title: "Nova AI",
-    subtitle: "Autonomous Multi-LLM, RAG & MCP Agent Platform",
-    badge: "Agentic AI Architecture",
-    impactStat: "RAG + MCP + Voice + Vision",
-    category: "AI & Agents",
-    filterGroup: "AI & Agents",
-    clientProblem: "Single-model chat wrappers break when workflows need local document retrieval, multi-step tool execution, provider failover, or voice/image reasoning.",
-    clientSolution: "Built a modular Python FastAPI agent runtime with an Intent Routing pipeline (CHAT / PLAN / EXECUTE), multi-provider LLM failover (Gemini, OpenAI, Ollama, OpenRouter), Model Context Protocol (MCP) tools, and local RAG vector search.",
-    techStack: ["Python", "FastAPI", "RAG Vector Search", "MCP", "Voice STT/TTS", "Vision AI"],
-    description: "Multimodal autonomous AI assistant platform uniting intent planning, local RAG knowledge retrieval across PDF/DOCX/CSV files, MCP tool integrations, Voice AI, and Vision understanding.",
-    points: [
-      "Intent router classifies tasks into CHAT, PLAN, EXECUTE, and WEB_SEARCH pipelines.",
-      "Supports seamless failover across OpenAI, Gemini, Ollama, LM Studio, and OpenRouter.",
-      "Chunks and indexes PDF, DOCX, TXT, CSV, and JSON files for local semantic RAG search.",
-      "Includes Voice STT/TTS streaming plus permission-guarded MCP tool execution."
-    ],
-    github: "https://github.com/dharmendra0412/Nova-AI",
-    features: [
-      "Multi-Provider LLM Failover",
-      "Model Context Protocol (MCP)",
-      "Local Document RAG Indexer",
-      "Permission-Guarded Tool Execution"
-    ]
-  },
-  {
     id: "phish-guard-ai",
     title: "PhishGuard AI",
-    subtitle: "Hybrid ML Phishing Detection Across URLs, Emails & SMS",
+    subtitle: "Real-Time Fraud & Phishing Threat Detection System",
     badge: "Cybersecurity ML",
     impactStat: "700k+ Threat Samples · Sub-Second API",
-    category: "AI & Agents",
-    filterGroup: "AI & Agents",
+    category: "AI & Vision",
+    filterGroup: "AI & Vision",
     clientProblem: "Static domain blacklists miss newly registered zero-day phishing domains and obfuscated SMS/email attacks in multilingual regions.",
-    clientSolution: "Engineered a hybrid Random Forest + TF-IDF + heuristic threat engine trained on 650,000+ malicious URLs and 70,000+ phishing emails/SMS, served via a sub-second FastAPI API and Chrome browser extension.",
-    techStack: ["Python", "FastAPI", "Scikit-Learn", "TF-IDF", "Random Forest", "Chrome Extension"],
-    description: "Real-time cybersecurity threat detection platform combining large-scale machine learning classification with heuristic safety scoring across a web dashboard and browser extension.",
+    clientSolution: "Engineered a hybrid Random Forest + TF-IDF + heuristic threat engine trained on 650,000+ malicious URLs and 70,000+ phishing emails/SMS, served via a FastAPI inference backend and live fraud-detection UI.",
+    techStack: ["Python", "FastAPI", "Scikit-Learn", "TF-IDF", "Random Forest", "Vercel"],
+    description: "Real-time cybersecurity threat detection platform combining large-scale machine learning classification with heuristic safety scoring.",
     points: [
       "Trained on 650,000+ URL signatures and 70,000+ phishing emails and SMS messages.",
       "Extracts lexical entropy, domain anomalies, and TF-IDF n-gram threat features.",
-      "Includes FastAPI REST scoring backend, Chrome extension client, and glassmorphism dashboard.",
-      "Supports multilingual/regional phishing patterns including Hindi lure indicators."
+      "FastAPI REST backend powers real-time fraud scoring via the deployed web interface.",
+      "Supports multilingual phishing indicators including regional SMS lure patterns."
     ],
-    github: "https://github.com/dharmendra0412/phishguard-ai",
+    liveUrl: "https://phishguard-ai-topaz.vercel.app",
     features: [
       "Random Forest + TF-IDF Engine",
       "FastAPI Sub-Second Inference",
-      "Companion Chrome Extension",
-      "URL, Email & SMS Risk Scoring"
+      "URL, Email & SMS Risk Scoring",
+      "Live Threat Risk Dashboard"
+    ]
+  },
+  {
+    id: "nasa-mission-control",
+    title: "Mission Control: Spaceflight Sim",
+    subtitle: "NASA Systems Engineering & 3D Multiplayer Spaceflight Simulator",
+    badge: "3D WebGL & Systems",
+    impactStat: "3D Spacecraft CAD · Multiplayer WebSockets",
+    category: "Systems & Client",
+    filterGroup: "Systems & Client",
+    clientProblem: "Space systems engineering concepts—power budgets, telemetry links, orbital mechanics, and launch trade-offs—are hard to visualize without interactive real-time simulation tools.",
+    clientSolution: "Built an interactive WebGL/Three.js simulator inspired by the NASA Systems Engineering Handbook, complete with a live 3D Blue Marble Earth, real-time Spacecraft CAD Inspector, Apollo Quindar telemetry audio, and WebSocket multi-lead collaboration.",
+    techStack: ["Three.js", "WebGL", "JavaScript", "Node.js", "WebSockets", "Vercel"],
+    description: "Interactive space mission design and systems-engineering simulator with real-time 3D Earth rendering, holographic wireframe spacecraft CAD, launch pad physics, and 4-player WebSocket co-op.",
+    points: [
+      "Photorealistic 3D Earth (NASA Blue/Black Marble) with atmosphere glow, cloud layers & city lights.",
+      "Real-time 3D Spacecraft CAD Inspector with PBR materials and holographic wireframe blueprint mode.",
+      "LC-39A 3D launch sequence with Mach 1.0 Prandtl-Glauert vapor cone & Deep Space Network status.",
+      "Powered by a Node.js + WebSocket (`ws`) multiplayer backend with automated test suites."
+    ],
+    liveUrl: "https://nasa-hazel.vercel.app",
+    features: [
+      "3D Spacecraft CAD Blueprint UI",
+      "4-Lead WebSocket Co-Op Mode",
+      "DSN Ground Track & Telemetry",
+      "Mach 1.0 Launch Ascent Physics"
     ]
   },
   {
@@ -314,9 +312,8 @@ export const projectsData = [
       "Implements 23-Indian-language localization context across responsive SPA views.",
       "Integrates Leaflet (OpenStreetMap) geospatial pins and Printable/PDF trip itineraries.",
       "Unified Express.js server with JWT/bcrypt authentication and MongoDB Atlas aggregation.",
-      "Backed by written PRD, Technical Documentation, and Vercel production deployment."
+      "Deployed live on Vercel with complete PRD and technical architecture specs."
     ],
-    github: "https://github.com/dharmendra0412/Bharat-Teerth",
     liveUrl: "https://bharat-teerth.vercel.app",
     features: [
       "23 Indian Languages Context",
@@ -326,29 +323,29 @@ export const projectsData = [
     ]
   },
   {
-    id: "pdfly-pro",
-    title: "PDFly Pro",
-    subtitle: "Full-Stack Document, Conversion & OCR Processing Suite",
-    badge: "Full-Stack Tool",
-    impactStat: "Merge · Split · OCR · AI Docs",
-    category: "Vision & Security",
-    filterGroup: "Vision & Security",
-    clientProblem: "Teams constantly juggle separate unreliable tools for merging PDFs, compressing scans, extracting text with OCR, and converting Office documents.",
-    clientSolution: "Engineered a unified Node.js & Express backend toolkit combining pdf-lib, pdfjs-dist, Tesseract.js OCR, Sharp, docx/xlsx/pptxgenjs converters, and clean modular controller architecture.",
-    techStack: ["Node.js", "Express", "PDF-Lib", "Tesseract.js OCR", "Sharp", "JavaScript"],
-    description: "Comprehensive PDF & document utility server powering multi-file merging, splitting, image optimization, OCR extraction, watermarks, and Office format generation.",
+    id: "ag-traders",
+    title: "AG Traders",
+    subtitle: "Commercial Product Showcase & Brand Catalog Web App",
+    badge: "Client Delivery",
+    impactStat: "Next.js · Commercial Production Site",
+    category: "Systems & Client",
+    filterGroup: "Systems & Client",
+    clientProblem: "A commercial bath fittings business needed a fast, modern digital storefront and product catalog to showcase premium fixtures to residential and commercial buyers.",
+    clientSolution: "Engineered and shipped a responsive Next.js web application featuring structured fixture collections, crisp product browsing across mobile and desktop, and edge deployment on Vercel.",
+    techStack: ["Next.js", "React", "Tailwind CSS", "Responsive UI", "Vercel"],
+    description: "Live commercial brand & fixture showcase engineered for modern residential and commercial bath fittings buyers.",
     points: [
-      "Modular Express controllers handling Multer file pipelines, compression, and downloads.",
-      "Integrates Tesseract.js OCR alongside pdf-lib and pdfjs-dist for scanned text workflows.",
-      "Supports Office document exports via docx, xlsx, and pptxgenjs.",
-      "Includes Anthropic SDK hooks for automated document summarization workflows."
+      "Built on Next.js for fast page transitions, SEO metadata, and mobile optimization.",
+      "Organized multi-category fixture showcase tailored for residential & commercial clients.",
+      "Optimized typography, responsive grids, and asset loading via Vercel edge network.",
+      "Delivered end-to-end from UI design through live domain deployment."
     ],
-    github: "https://github.com/dharmendra0412/PDFly-Pro",
+    liveUrl: "https://ag-snowy.vercel.app",
     features: [
-      "Merge, Split, Rotate & Watermark",
-      "Tesseract.js Scanned OCR",
-      "DOCX / XLSX / PPTX Generation",
-      "Modular Express Controller API"
+      "Next.js Production Storefront",
+      "Commercial Catalog Navigation",
+      "Mobile-First Responsive Grid",
+      "Vercel Edge Performance"
     ]
   }
 ];

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { X, Award, CheckCircle2, AlertCircle, Lightbulb, Download, ExternalLink } from 'lucide-react';
-import { Github } from './Icons';
 
 export default function ProjectModal({ project, onClose }) {
   useEffect(() => {
@@ -174,19 +173,11 @@ export default function ProjectModal({ project, onClose }) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#0b332d] hover:bg-[#124b42] border border-[#26eac1]/45 text-[#3defc7] text-xs font-bold transition-colors"
               >
-                <ExternalLink className="w-3.5 h-3.5" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#3defc7] animate-pulse" />
                 <span>Open Live Demo</span>
+                <ExternalLink className="w-3.5 h-3.5" />
               </a>
             )}
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.06] hover:bg-white/[0.1] text-slate-200 text-xs font-medium transition-colors"
-            >
-              <Github className="w-4 h-4" />
-              <span>Source Code</span>
-            </a>
             <button
               type="button"
               onClick={onClose}

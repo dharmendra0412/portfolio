@@ -3,15 +3,14 @@ import {
   Award,
   ArrowUpRight,
   Activity,
-  FileText,
   Shield,
-  Bot,
+  Rocket,
   Building2,
   Globe,
+  Store,
   FolderGit2,
   ExternalLink
 } from 'lucide-react';
-import { Github } from './Icons';
 import { projectsData } from '../data/portfolioData';
 import ProjectModal from './ProjectModal';
 
@@ -19,7 +18,7 @@ export default function Projects() {
   const [selectedFilter, setSelectedFilter] = useState('All');
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const filterOptions = ['All', 'Full-Stack', 'AI & Agents', 'Vision & Security'];
+  const filterOptions = ['All', 'Full-Stack', 'AI & Vision', 'Systems & Client'];
 
   const filteredProjects = selectedFilter === 'All'
     ? projectsData
@@ -31,14 +30,14 @@ export default function Projects() {
         return Activity;
       case 'propflow':
         return Building2;
-      case 'nova-ai':
-        return Bot;
       case 'phish-guard-ai':
         return Shield;
+      case 'nasa-mission-control':
+        return Rocket;
       case 'bharat-teerth':
         return Globe;
-      case 'pdfly-pro':
-        return FileText;
+      case 'ag-traders':
+        return Store;
       default:
         return FolderGit2;
     }
@@ -52,13 +51,13 @@ export default function Projects() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <div className="space-y-2">
             <span className="text-xs font-mono uppercase tracking-wider text-[#34e8be] font-semibold">
-              Verified Proof of Work • Live Apps & Repositories
+              Verified Proof of Work • Live Production Apps
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Featured <span className="text-[#34e8be]">Engineering Projects</span>
+              Featured <span className="text-[#34e8be]">Live Projects</span>
             </h2>
             <p className="text-[#95aab0] text-sm sm:text-base max-w-2xl">
-              Production SaaS applications, autonomous LLM/RAG systems, and competition-winning computer vision software backed by public GitHub code and live deployments.
+              Real-world SaaS platforms, 3D systems simulators, client websites, and AI engineering tools deployed live for interactive testing.
             </p>
           </div>
 
@@ -148,7 +147,7 @@ export default function Projects() {
                   </div>
                 </div>
 
-                {/* Card Action Bar: Case Study + Live Demo + Exact GitHub Repo */}
+                {/* Card Action Bar: Architecture Breakdown + Live Demo Only */}
                 <div className="pt-5 mt-5 border-t border-white/[0.08] flex flex-wrap items-center justify-between gap-3">
                   <button
                     type="button"
@@ -159,31 +158,18 @@ export default function Projects() {
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </button>
 
-                  <div className="flex items-center gap-2">
-                    {project.liveUrl && (
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#0b332d] hover:bg-[#124b42] border border-[#26eac1]/45 text-[#3defc7] text-xs font-semibold transition-colors"
-                      >
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#3defc7] animate-pulse" />
-                        <span>Live Demo</span>
-                        <ExternalLink className="w-3 h-3" />
-                      </a>
-                    )}
-
+                  {project.liveUrl && (
                     <a
-                      href={project.github}
+                      href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#08171c] hover:bg-white/[0.08] border border-white/[0.1] text-slate-200 hover:text-white text-xs font-medium transition-colors"
-                      title={`View ${project.title} GitHub Repository`}
+                      className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#0b332d] hover:bg-[#124b42] border border-[#26eac1]/45 text-[#3defc7] text-xs font-semibold transition-colors shadow-[0_0_12px_rgba(38,234,193,0.12)]"
                     >
-                      <Github className="w-3.5 h-3.5" />
-                      <span>Repo</span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#3defc7] animate-pulse" />
+                      <span>Live Demo</span>
+                      <ExternalLink className="w-3 h-3" />
                     </a>
-                  </div>
+                  )}
                 </div>
               </div>
             );
