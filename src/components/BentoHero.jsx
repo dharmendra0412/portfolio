@@ -292,11 +292,18 @@ export default function BentoHero() {
               </svg>
 
               {/* Cutout Portrait Image (face center x=54.5%, hair top y=7.5%, chin y=51.5%, wide shoulders blending cleanly) */}
-              <img
-                src="/images/dharmendra_cutout.png"
-                alt="Dharmendra Kumar"
-                className="absolute -bottom-[5%] left-[18%] w-[73%] h-[99%] object-contain object-bottom z-10 portrait-melt-mask select-none pointer-events-none drop-shadow-[0_14px_30px_rgba(0,0,0,0.6)]"
-              />
+              <picture className="contents">
+                <source srcSet="/images/dharmendra_cutout.webp" type="image/webp" />
+                <img
+                  src="/images/dharmendra_cutout.png"
+                  alt="Dharmendra Kumar"
+                  width="896"
+                  height="1118"
+                  fetchpriority="high"
+                  decoding="async"
+                  className="absolute -bottom-[5%] left-[18%] w-[73%] h-[99%] object-contain object-bottom z-10 portrait-melt-mask select-none pointer-events-none drop-shadow-[0_14px_30px_rgba(0,0,0,0.6)]"
+                />
+              </picture>
 
               {/* Floating Tilted Info Pill (fits cleanly inside mobile viewport while matching exact grid x=38.5%..95.5% on sm+) */}
               <div className="absolute bottom-[7.5%] left-[12%] sm:left-[38.5%] right-[4%] sm:right-[4.5%] z-20 animate-float-subtle">

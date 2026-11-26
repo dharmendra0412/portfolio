@@ -68,11 +68,10 @@ export default function Projects() {
                 key={filter}
                 type="button"
                 onClick={() => setSelectedFilter(filter)}
-                className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all ${
-                  selectedFilter === filter
+                className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all ${selectedFilter === filter
                     ? 'bg-gradient-to-r from-[#3ef2cb] to-[#1fd9b3] text-[#031919] font-bold shadow-[0_0_16px_rgba(38,234,193,0.25)]'
                     : 'bg-[#08171c] text-[#95aab0] hover:text-white border border-white/[0.08]'
-                }`}
+                  }`}
               >
                 {filter}
               </button>
@@ -89,9 +88,8 @@ export default function Projects() {
             return (
               <div
                 key={project.id}
-                className={`p-7 rounded-2xl teal-card transition-all flex flex-col justify-between group ${
-                  isWinner ? 'border-[#26eac1]/45 shadow-[0_12px_36px_rgba(38,234,193,0.08)]' : ''
-                }`}
+                className={`p-7 rounded-2xl teal-card transition-all flex flex-col justify-between group ${isWinner ? 'border-[#26eac1]/45 shadow-[0_12px_36px_rgba(38,234,193,0.08)]' : ''
+                  }`}
               >
                 <div className="space-y-4">
                   {/* Top Meta Row */}
@@ -107,11 +105,10 @@ export default function Projects() {
                     </div>
 
                     <span
-                      className={`text-[11px] font-mono px-2.5 py-0.5 rounded-full border flex items-center gap-1 ${
-                        isWinner
+                      className={`text-[11px] font-mono px-2.5 py-0.5 rounded-full border flex items-center gap-1 ${isWinner
                           ? 'bg-[#0b332d] text-[#3defc7] border-[#26eac1]/45 font-bold'
                           : 'bg-[#051115] text-slate-300 border-white/[0.08]'
-                      }`}
+                        }`}
                     >
                       {isWinner && <Award className="w-3.5 h-3.5 text-[#3defc7]" />}
                       <span>{project.badge}</span>

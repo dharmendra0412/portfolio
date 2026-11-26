@@ -8,11 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#040e16" />
   <link rel="canonical" href="https://dharmendra.cv/" />
+  <title>Dharmendra Kumar | Full-Stack Developer & AI/CV Engineer</title>
   <meta name="description"
-    content="Dharmendra Kumar — Full-Stack Software Developer, AI Agent & Computer Vision Engineer. 1st Place Winner at Uttarakhand SportsTech Hackathon 2025 (IIT Roorkee TIDES) and Global Top 6.3% (#818/12,885) in HackerRank AI Challenge. Available for SWE Internships, Full-Stack Roles & Startup MVPs." />
+    content="Dharmendra Kumar — Full-Stack Developer & AI/CV Engineer. 1st Place SportsTech Hackathon winner & #818 Global AI Rank. React, FastAPI & Next.js." />
   <meta name="keywords"
-    content="Dharmendra Kumar, Software Developer, Full-Stack Engineer, React, Node.js, FastAPI, Python, Computer Vision, MediaPipe Pose, AI Engineer, Dehradun, Freelance MVP Developer" />
+    content="Dharmendra Kumar, Software Developer, Full-Stack Engineer, React, Next.js, Node.js, FastAPI, Python, Computer Vision, MediaPipe Pose, AI Engineer, Dehradun" />
   <meta name="author" content="Dharmendra Kumar" />
+
+  <!-- Preload Hero Cutout WebP for faster LCP -->
+  <link rel="preload" as="image" href="/images/dharmendra_cutout.webp" type="image/webp" />
 
   <!-- Open Graph / Social Hiring Preview -->
   <meta property="og:type" content="website" />
@@ -20,7 +24,7 @@
   <meta property="og:site_name" content="Dharmendra Kumar Portfolio" />
   <meta property="og:title" content="Dharmendra Kumar | Full-Stack Developer & AI/CV Engineer" />
   <meta property="og:description"
-    content="1st Place Hackathon Winner & Top 6.3% Global AI Rank (#818/12,885). Shipping full-stack SaaS apps, multi-LLM RAG agents, and 60 FPS client-side computer vision systems." />
+    content="1st Place Hackathon Winner & Top 6.3% Global AI Rank (#818/12,885). Full-Stack SaaS apps, 3D WebGL systems & 60 FPS computer vision." />
   <meta property="og:image" content="https://dharmendra.cv/og-preview.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -29,34 +33,41 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Dharmendra Kumar | Software Developer & AI/CV Engineer" />
   <meta name="twitter:description"
-    content="Full-Stack Web (React, Node.js, FastAPI) & Computer Vision / AI Agent Engineer. Open to SWE roles, internships, and client MVPs." />
+    content="Full-Stack Web (React, Next.js, FastAPI) & Computer Vision / AI Engineer. Open to SWE roles, internships, and client MVPs." />
   <meta name="twitter:image" content="https://dharmendra.cv/og-preview.jpg" />
 
-  <!-- Structured Data for Search & Recruiter Discovery -->
+  <!-- Structured Data for Search, Rich Results & AI Discovery -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Dharmendra Kumar",
       "url": "https://dharmendra.cv/",
+      "mainEntityOfPage": "https://dharmendra.cv/",
       "image": "https://dharmendra.cv/og-preview.jpg",
       "jobTitle": "Software Developer & Computer Vision Engineer",
+      "description": "Computer Science & Engineering undergraduate building React, Next.js, FastAPI, Node.js SaaS systems and 60 FPS client-side computer vision apps.",
       "email": "mailto:dharmendrakumar481212@gmail.com",
       "telephone": "+91-9045141614",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Dehradun",
+        "addressRegion": "Uttarakhand",
         "addressCountry": "IN"
       },
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "JB Institute of Technology"
       },
+      "award": [
+        "1st Place Winner — Uttarakhand SportsTech Hackathon 2025 (IIT Roorkee TIDES & Fit India)",
+        "Global Rank #818 out of 12,885 across 48 countries — HackerRank Orchestrate AI Agent Challenge"
+      ],
       "sameAs": [
         "https://github.com/dharmendra0412",
         "https://www.linkedin.com/in/dharmendra-kumar-b3a8223b1"
       ],
-      "knowsAbout": ["Python", "JavaScript", "React", "FastAPI", "Node.js", "MediaPipe Pose", "Computer Vision", "Machine Learning", "Cybersecurity"]
+      "knowsAbout": ["Python", "JavaScript", "TypeScript", "React", "Next.js", "FastAPI", "Node.js", "MediaPipe Pose", "Computer Vision", "Three.js", "Machine Learning"]
     }
   </script>
 
@@ -66,12 +77,32 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-
-  <title>Dharmendra Kumar | Full-Stack Developer & AI/CV Engineer</title>
 </head>
 
 <body class="bg-[#040e16] text-slate-100 antialiased selection:bg-teal-400 selection:text-black">
-  <div id="root"></div>
+  <div id="root">
+    <main style="max-width:960px;margin:0 auto;padding:64px 24px;background:#040e16;color:#e6f2f0;font-family:system-ui,-apple-system,sans-serif;line-height:1.6;">
+      <h1 style="font-size:2.25rem;font-weight:800;margin:0 0 12px;color:#ffffff;">Dharmendra Kumar — Software Developer &amp; Computer Vision Engineer</h1>
+      <p style="color:#95aab0;margin:0 0 24px;">
+        Computer Science undergraduate at JB Institute of Technology, Dehradun (2024–2028). 1st Place Winner at Uttarakhand SportsTech Hackathon 2025 (IIT Roorkee TIDES) and Global Rank #818 of 12,885 participants across 48 countries in HackerRank Orchestrate AI.
+      </p>
+      <section>
+        <h2 style="font-size:1.25rem;color:#34e8be;margin:0 0 8px;">Featured Live Projects</h2>
+        <ul>
+          <li><a href="https://sports-hackathon-six.vercel.app" style="color:#3defc7;">AI Form Coach</a> — 60 FPS MediaPipe Pose exercise analyzer ($0 server GPU cost)</li>
+          <li><a href="https://prop-flow-pi.vercel.app" style="color:#3defc7;">PropFlow</a> — Real-Time Property Rental, Maintenance &amp; Amenity SaaS (React, Socket.IO, MongoDB Atlas)</li>
+          <li><a href="https://phishguard-ai-topaz.vercel.app" style="color:#3defc7;">PhishGuard AI</a> — Real-Time ML Phishing &amp; Fraud Detection (FastAPI, Scikit-Learn)</li>
+          <li><a href="https://nasa-hazel.vercel.app" style="color:#3defc7;">Mission Control: Spaceflight Sim</a> — NASA Systems Engineering 3D WebGL &amp; WebSocket Simulator</li>
+          <li><a href="https://bharat-teerth.vercel.app" style="color:#3defc7;">Bharat Teerth</a> — 3-Tier Heritage &amp; Pilgrimage Portal (23 Indian Languages, Leaflet Maps)</li>
+          <li><a href="https://ag-snowy.vercel.app" style="color:#3defc7;">AG Traders</a> — Commercial Product Catalog (Next.js)</li>
+        </ul>
+      </section>
+      <section style="margin-top:20px;">
+        <h2 style="font-size:1.25rem;color:#34e8be;margin:0 0 8px;">Contact &amp; Credentials</h2>
+        <p>Email: dharmendrakumar481212@gmail.com | Phone: +91-9045141614 | <a href="https://github.com/dharmendra0412" style="color:#3defc7;">GitHub</a> | <a href="https://www.linkedin.com/in/dharmendra-kumar-b3a8223b1" style="color:#3defc7;">LinkedIn</a> | <a href="https://dharmendra.cv/Dharmendra_Kumar_Resume.pdf" style="color:#3defc7;">Resume PDF</a></p>
+      </section>
+    </main>
+  </div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
