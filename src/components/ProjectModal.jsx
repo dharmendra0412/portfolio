@@ -152,11 +152,18 @@ export default function ProjectModal({ project, onClose }) {
                 </a>
               </div>
               <div className="rounded-xl overflow-hidden border border-[#26eac1]/25 max-h-48 bg-black">
-                <img
-                  src={project.certificateImage}
-                  alt="Uttarakhand SportsTech Hackathon 2025 Certificate"
-                  className="w-full h-full object-cover object-center"
-                />
+                <picture>
+                  <source srcSet={project.certificateImage.replace(/\.jpg$/i, '.webp')} type="image/webp" />
+                  <img
+                    src={project.certificateImage}
+                    alt="Uttarakhand SportsTech Hackathon 2025 Certificate"
+                    width="960"
+                    height="600"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </picture>
               </div>
             </div>
           )}

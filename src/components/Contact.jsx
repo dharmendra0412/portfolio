@@ -15,7 +15,6 @@ import {
   Rocket,
   FileText
 } from 'lucide-react';
-import confetti from 'canvas-confetti';
 import { personalInfo } from '../data/portfolioData';
 
 export default function Contact({ onPreviewResume }) {
@@ -127,7 +126,12 @@ export default function Contact({ onPreviewResume }) {
       const result = await response.json().catch(() => ({}));
 
       if (response.ok && (result.success === 'true' || result.success === true || !result.message?.toLowerCase().includes('error'))) {
-        confetti({ particleCount: 75, spread: 65, origin: { y: 0.65 } });
+        try {
+          const { default: confetti } = await import('canvas-confetti');
+          confetti({ particleCount: 75, spread: 65, origin: { y: 0.65 } });
+        } catch {
+          // Non-critical celebratory effect
+        }
         setSubmittedMode('direct');
       } else {
         setSubmitError('Direct form endpoint returned an error. Please use WhatsApp or your Email app below.');

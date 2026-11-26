@@ -293,7 +293,11 @@ export default function BentoHero() {
 
               {/* Cutout Portrait Image (face center x=54.5%, hair top y=7.5%, chin y=51.5%, wide shoulders blending cleanly) */}
               <picture className="contents">
-                <source srcSet="/images/dharmendra_cutout.webp" type="image/webp" />
+                <source
+                  srcSet="/images/dharmendra_cutout-sm.webp 540w, /images/dharmendra_cutout.webp 896w"
+                  sizes="(max-width: 640px) 75vw, 460px"
+                  type="image/webp"
+                />
                 <img
                   src="/images/dharmendra_cutout.png"
                   alt="Dharmendra Kumar"

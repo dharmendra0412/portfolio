@@ -15,8 +15,9 @@
     content="Dharmendra Kumar, Software Developer, Full-Stack Engineer, React, Next.js, Node.js, FastAPI, Python, Computer Vision, MediaPipe Pose, AI Engineer, Dehradun" />
   <meta name="author" content="Dharmendra Kumar" />
 
-  <!-- Preload Hero Cutout WebP for faster LCP -->
-  <link rel="preload" as="image" href="/images/dharmendra_cutout.webp" type="image/webp" />
+  <!-- Responsive Hero Cutout WebP Preload for faster mobile/desktop LCP -->
+  <link rel="preload" as="image" href="/images/dharmendra_cutout-sm.webp" type="image/webp" media="(max-width: 640px)" />
+  <link rel="preload" as="image" href="/images/dharmendra_cutout.webp" type="image/webp" media="(min-width: 641px)" />
 
   <!-- Open Graph / Social Hiring Preview -->
   <meta property="og:type" content="website" />
@@ -71,12 +72,21 @@
     }
   </script>
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts (non-render-blocking async stylesheet) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
+    rel="preload"
+    as="style"
     href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+    onload="this.onload=null;this.rel='stylesheet'"
+  >
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+  </noscript>
 </head>
 
 <body class="bg-[#040e16] text-slate-100 antialiased selection:bg-teal-400 selection:text-black">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import Navbar from './components/Navbar';
 import BentoHero from './components/BentoHero';
 import About from './components/About';
@@ -8,7 +8,8 @@ import CredentialsSection from './components/CredentialsSection';
 import WhatIBuild from './components/WhatIBuild';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import ResumeModal from './components/ResumeModal';
+
+const ResumeModal = lazy(() => import('./components/ResumeModal'));
 
 export default function App() {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
@@ -26,7 +27,11 @@ export default function App() {
         <Contact onPreviewResume={() => setIsResumeOpen(true)} />
       </main>
       <Footer />
-      <ResumeModal isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)} />
+      {isResumeOpen && (
+        <Suspense fallback={null}>
+          <ResumeModal isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)} />
+        </Suspense>
+      )}
     </div>
   );
 }

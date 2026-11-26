@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import {
   Award,
   ArrowUpRight,
@@ -12,7 +12,8 @@ import {
   ExternalLink
 } from 'lucide-react';
 import { projectsData } from '../data/portfolioData';
-import ProjectModal from './ProjectModal';
+
+const ProjectModal = lazy(() => import('./ProjectModal'));
 
 export default function Projects() {
   const [selectedFilter, setSelectedFilter] = useState('All');
@@ -176,10 +177,12 @@ export default function Projects() {
       </div>
 
       {selectedProject && (
-        <ProjectModal
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
+        <Suspense fallback={null}>
+          <ProjectModal
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
+        </Suspense>
       )}
     </section>
   );

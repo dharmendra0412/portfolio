@@ -87,13 +87,18 @@ export default function CredentialsSection() {
 
                   {hasImage && (
                     <div className="relative rounded-xl overflow-hidden aspect-[16/10] bg-[#030a0e] border border-[#26eac1]/20 group">
-                      <img
-                        src={cert.image}
-                        alt={cert.title}
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
+                      <picture>
+                        <source srcSet={cert.image.replace(/\.jpg$/i, '.webp')} type="image/webp" />
+                        <img
+                          src={cert.image}
+                          alt={cert.title}
+                          width="960"
+                          height="600"
+                          loading="lazy"
+                          decoding="async"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </picture>
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
                         <span className="text-[11px] font-mono text-white/90 flex items-center gap-1">
                           <Eye className="w-3 h-3 text-[#3defc7]" /> Full Preview
@@ -171,11 +176,17 @@ export default function CredentialsSection() {
             </div>
 
             <div className="p-6 bg-black/70 flex items-center justify-center max-h-[75vh] overflow-auto">
-              <img
-                src={selectedCert.image}
-                alt={selectedCert.title}
-                className="max-h-[68vh] w-auto rounded-xl object-contain shadow-2xl border border-white/[0.1]"
-              />
+              <picture>
+                <source srcSet={selectedCert.image.replace(/\.jpg$/i, '.webp')} type="image/webp" />
+                <img
+                  src={selectedCert.image}
+                  alt={selectedCert.title}
+                  width="960"
+                  height="600"
+                  decoding="async"
+                  className="max-h-[68vh] w-auto rounded-xl object-contain shadow-2xl border border-white/[0.1]"
+                />
+              </picture>
             </div>
 
             <div className="p-3 px-6 border-t border-white/[0.08] bg-[#051116] flex items-center justify-between text-xs text-[#95aab0] font-mono">

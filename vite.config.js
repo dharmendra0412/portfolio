@@ -7,5 +7,15 @@ export default defineConfig({
     port: 3000,
     open: false,
   },
+  build: {
+    assetsInlineLimit: 4096,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom'],
+          'icons-vendor': ['lucide-react'],
+        },
+      },
+    },
+  },
 });
-
