@@ -399,3 +399,30 @@ export const certificationsData = [
     partners: ["IIT Kanpur", "MeitY", "E&ICT Academy"]
   }
 ];
+
+export const faqData = [
+  {
+    question: "How does Dharmendra run 60 FPS computer vision with $0 cloud GPU cost?",
+    answer: "By moving inference from Python cloud servers into the user's browser using MediaPipe Pose WebAssembly/WebGL. In AI Form Coach (1st Place, Uttarakhand SportsTech Hackathon 2025), 33 skeletal landmarks and joint angles compute locally in real time without streaming webcam video or paying for cloud GPUs."
+  },
+  {
+    question: "What full-stack tech stack do you use for SaaS platforms and startup MVPs?",
+    answer: "I build frontends with React 18, Next.js, and Tailwind CSS backed by Node.js/Express or Python FastAPI APIs, real-time Socket.IO or WebSockets, and MongoDB Atlas or MySQL persistence—deployed on Vercel and Render with staging URLs from week one."
+  },
+  {
+    question: "How did PropFlow eliminate amenity booking conflicts in real time?",
+    answer: "PropFlow enforces server-side interval-collision checks across booking time windows, operating hours, and guest caps before persisting to MongoDB Atlas, paired with Socket.IO for live maintenance ticket chat and <50ms status updates."
+  },
+  {
+    question: "What machine learning and cybersecurity engineering experience do you have?",
+    answer: "I engineered PhishGuard AI using Scikit-Learn Random Forest and TF-IDF pipelines trained on 650,000+ malicious URLs and 70,000+ phishing emails/SMS behind a FastAPI REST API, alongside AES-256 + LSB steganography encryption tooling."
+  },
+  {
+    question: "What roles or freelance projects are you currently open to?",
+    answer: "I am immediately available for Software Engineering Internships, Junior Full-Stack Developer or AI/Computer Vision Engineer roles (remote or on-site), as well as 1–3 week fixed-scope client MVP and commercial website builds."
+  },
+  {
+    question: "Do clients and hiring teams receive full code ownership and deployment support?",
+    answer: "Yes. Every client project includes 100% source code and IP ownership, clean modular documentation, custom domain and SSL setup on Vercel, and post-launch maintenance support with a guaranteed <4-hour response SLA."
+  }
+];

@@ -37,38 +37,184 @@
     content="Full-Stack Web (React, Next.js, FastAPI) & Computer Vision / AI Engineer. Open to SWE roles, internships, and client MVPs." />
   <meta name="twitter:image" content="https://dharmendra.cv/og-preview.jpg" />
 
-  <!-- Structured Data for Search, Rich Results & AI Discovery -->
+  <!-- Structured Data Graph: Person, WebSite, Live SoftwareApplications, and Engineering FAQ -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Dharmendra Kumar",
-      "url": "https://dharmendra.cv/",
-      "mainEntityOfPage": "https://dharmendra.cv/",
-      "image": "https://dharmendra.cv/og-preview.jpg",
-      "jobTitle": "Software Developer & Computer Vision Engineer",
-      "description": "Computer Science & Engineering undergraduate building React, Next.js, FastAPI, Node.js SaaS systems and 60 FPS client-side computer vision apps.",
-      "email": "mailto:dharmendrakumar481212@gmail.com",
-      "telephone": "+91-9045141614",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Dehradun",
-        "addressRegion": "Uttarakhand",
-        "addressCountry": "IN"
-      },
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "JB Institute of Technology"
-      },
-      "award": [
-        "1st Place Winner — Uttarakhand SportsTech Hackathon 2025 (IIT Roorkee TIDES & Fit India)",
-        "Global Rank #818 out of 12,885 across 48 countries — HackerRank Orchestrate AI Agent Challenge"
-      ],
-      "sameAs": [
-        "https://github.com/dharmendra0412",
-        "https://www.linkedin.com/in/dharmendra-kumar-b3a8223b1"
-      ],
-      "knowsAbout": ["Python", "JavaScript", "TypeScript", "React", "Next.js", "FastAPI", "Node.js", "MediaPipe Pose", "Computer Vision", "Three.js", "Machine Learning"]
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://dharmendra.cv/#website",
+          "url": "https://dharmendra.cv/",
+          "name": "Dharmendra Kumar Portfolio",
+          "description": "Portfolio of Dharmendra Kumar — Full-Stack Developer & Computer Vision Engineer.",
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://dharmendra.cv/#person",
+          "name": "Dharmendra Kumar",
+          "url": "https://dharmendra.cv/",
+          "mainEntityOfPage": "https://dharmendra.cv/",
+          "image": "https://dharmendra.cv/og-preview.jpg",
+          "jobTitle": "Software Developer & Computer Vision Engineer",
+          "description": "Computer Science & Engineering undergraduate building React, Next.js, FastAPI, Node.js SaaS systems and 60 FPS client-side computer vision apps.",
+          "email": "mailto:dharmendrakumar481212@gmail.com",
+          "telephone": "+91-9045141614",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dehradun",
+            "addressRegion": "Uttarakhand",
+            "addressCountry": "IN"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "JB Institute of Technology"
+          },
+          "award": [
+            "1st Place Winner — Uttarakhand SportsTech Hackathon 2025 (IIT Roorkee TIDES & Fit India)",
+            "Global Rank #818 out of 12,885 across 48 countries — HackerRank Orchestrate AI Agent Challenge"
+          ],
+          "sameAs": [
+            "https://github.com/dharmendra0412",
+            "https://www.linkedin.com/in/dharmendra-kumar-b3a8223b1"
+          ],
+          "knowsAbout": ["Python", "JavaScript", "TypeScript", "React", "Next.js", "FastAPI", "Node.js", "MediaPipe Pose", "Computer Vision", "Three.js", "Machine Learning"]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://dharmendra.cv/#projects",
+          "name": "Featured Live Engineering Projects",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "WebApplication",
+                "name": "AI Form Coach",
+                "url": "https://sports-hackathon-six.vercel.app",
+                "applicationCategory": "HealthApplication",
+                "description": "60 FPS client-side MediaPipe Pose exercise analyzer tracking 33 body landmarks with $0 server GPU cost.",
+                "author": { "@id": "https://dharmendra.cv/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "WebApplication",
+                "name": "PropFlow",
+                "url": "https://prop-flow-pi.vercel.app",
+                "applicationCategory": "BusinessApplication",
+                "description": "Real-Time Property Rental, Maintenance & Amenity Management SaaS built with React 18, Node.js, Socket.IO, and MongoDB Atlas.",
+                "author": { "@id": "https://dharmendra.cv/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "WebApplication",
+                "name": "PhishGuard AI",
+                "url": "https://phishguard-ai-topaz.vercel.app",
+                "applicationCategory": "SecurityApplication",
+                "description": "Hybrid Random Forest + TF-IDF real-time fraud and phishing detection system trained on 700,000+ URL and message samples.",
+                "author": { "@id": "https://dharmendra.cv/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "WebApplication",
+                "name": "Mission Control: Spaceflight Sim",
+                "url": "https://nasa-hazel.vercel.app",
+                "applicationCategory": "SimulationApplication",
+                "description": "NASA systems engineering and real-time multiplayer 3D WebGL spaceflight simulator with WebSockets.",
+                "author": { "@id": "https://dharmendra.cv/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "WebApplication",
+                "name": "Bharat Teerth",
+                "url": "https://bharat-teerth.vercel.app",
+                "applicationCategory": "TravelApplication",
+                "description": "3-tier heritage and pilgrimage portal with 23 Indian languages, Leaflet maps, and Express + MongoDB Atlas backend.",
+                "author": { "@id": "https://dharmendra.cv/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "item": {
+                "@type": "WebApplication",
+                "name": "AG Traders",
+                "url": "https://ag-snowy.vercel.app",
+                "applicationCategory": "ShoppingApplication",
+                "description": "Commercial product showcase and fixture catalog storefront built with Next.js and Tailwind CSS.",
+                "author": { "@id": "https://dharmendra.cv/#person" }
+              }
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://dharmendra.cv/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does Dharmendra run 60 FPS computer vision with $0 cloud GPU cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "By moving inference from Python cloud servers into the user's browser using MediaPipe Pose WebAssembly/WebGL. In AI Form Coach (1st Place, Uttarakhand SportsTech Hackathon 2025), 33 skeletal landmarks and joint angles compute locally in real time without streaming webcam video or paying for cloud GPUs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What full-stack tech stack do you use for SaaS platforms and startup MVPs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I build frontends with React 18, Next.js, and Tailwind CSS backed by Node.js/Express or Python FastAPI APIs, real-time Socket.IO or WebSockets, and MongoDB Atlas or MySQL persistence—deployed on Vercel and Render with staging URLs from week one."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How did PropFlow eliminate amenity booking conflicts in real time?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PropFlow enforces server-side interval-collision checks across booking time windows, operating hours, and guest caps before persisting to MongoDB Atlas, paired with Socket.IO for live maintenance ticket chat and <50ms status updates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What machine learning and cybersecurity engineering experience do you have?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I engineered PhishGuard AI using Scikit-Learn Random Forest and TF-IDF pipelines trained on 650,000+ malicious URLs and 70,000+ phishing emails/SMS behind a FastAPI REST API, alongside AES-256 + LSB steganography encryption tooling."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What roles or freelance projects are you currently open to?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I am immediately available for Software Engineering Internships, Junior Full-Stack Developer or AI/Computer Vision Engineer roles (remote or on-site), as well as 1–3 week fixed-scope client MVP and commercial website builds."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do clients and hiring teams receive full code ownership and deployment support?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Every client project includes 100% source code and IP ownership, clean modular documentation, custom domain and SSL setup on Vercel, and post-launch maintenance support with a guaranteed <4-hour response SLA."
+              }
+            }
+          ]
+        }
+      ]
     }
   </script>
 
@@ -90,29 +236,7 @@
 </head>
 
 <body class="bg-[#040e16] text-slate-100 antialiased selection:bg-teal-400 selection:text-black">
-  <div id="root">
-    <main style="max-width:960px;margin:0 auto;padding:64px 24px;background:#040e16;color:#e6f2f0;font-family:system-ui,-apple-system,sans-serif;line-height:1.6;">
-      <h1 style="font-size:2.25rem;font-weight:800;margin:0 0 12px;color:#ffffff;">Dharmendra Kumar — Software Developer &amp; Computer Vision Engineer</h1>
-      <p style="color:#95aab0;margin:0 0 24px;">
-        Computer Science undergraduate at JB Institute of Technology, Dehradun (2024–2028). 1st Place Winner at Uttarakhand SportsTech Hackathon 2025 (IIT Roorkee TIDES) and Global Rank #818 of 12,885 participants across 48 countries in HackerRank Orchestrate AI.
-      </p>
-      <section>
-        <h2 style="font-size:1.25rem;color:#34e8be;margin:0 0 8px;">Featured Live Projects</h2>
-        <ul>
-          <li><a href="https://sports-hackathon-six.vercel.app" style="color:#3defc7;">AI Form Coach</a> — 60 FPS MediaPipe Pose exercise analyzer ($0 server GPU cost)</li>
-          <li><a href="https://prop-flow-pi.vercel.app" style="color:#3defc7;">PropFlow</a> — Real-Time Property Rental, Maintenance &amp; Amenity SaaS (React, Socket.IO, MongoDB Atlas)</li>
-          <li><a href="https://phishguard-ai-topaz.vercel.app" style="color:#3defc7;">PhishGuard AI</a> — Real-Time ML Phishing &amp; Fraud Detection (FastAPI, Scikit-Learn)</li>
-          <li><a href="https://nasa-hazel.vercel.app" style="color:#3defc7;">Mission Control: Spaceflight Sim</a> — NASA Systems Engineering 3D WebGL &amp; WebSocket Simulator</li>
-          <li><a href="https://bharat-teerth.vercel.app" style="color:#3defc7;">Bharat Teerth</a> — 3-Tier Heritage &amp; Pilgrimage Portal (23 Indian Languages, Leaflet Maps)</li>
-          <li><a href="https://ag-snowy.vercel.app" style="color:#3defc7;">AG Traders</a> — Commercial Product Catalog (Next.js)</li>
-        </ul>
-      </section>
-      <section style="margin-top:20px;">
-        <h2 style="font-size:1.25rem;color:#34e8be;margin:0 0 8px;">Contact &amp; Credentials</h2>
-        <p>Email: dharmendrakumar481212@gmail.com | Phone: +91-9045141614 | <a href="https://github.com/dharmendra0412" style="color:#3defc7;">GitHub</a> | <a href="https://www.linkedin.com/in/dharmendra-kumar-b3a8223b1" style="color:#3defc7;">LinkedIn</a> | <a href="https://dharmendra.cv/Dharmendra_Kumar_Resume.pdf" style="color:#3defc7;">Resume PDF</a></p>
-      </section>
-    </main>
-  </div>
+  <div id="root"><!--app-html--></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 

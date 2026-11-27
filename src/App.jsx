@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import CredentialsSection from './components/CredentialsSection';
 import WhatIBuild from './components/WhatIBuild';
+import EngineeringFAQ from './components/EngineeringFAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -24,6 +25,7 @@ export default function App() {
         <Projects />
         <CredentialsSection />
         <WhatIBuild onPreviewResume={() => setIsResumeOpen(true)} />
+        <EngineeringFAQ />
         <Contact onPreviewResume={() => setIsResumeOpen(true)} />
       </main>
       <Footer />
